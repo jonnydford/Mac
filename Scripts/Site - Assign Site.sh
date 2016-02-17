@@ -27,19 +27,3 @@ apiData="<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><computer><general><site
 ## Commands
 /usr/bin/curl -s -v -u  ${jssAPIUser}:${jssAPIPassword} -X PUT -H "Content-Type: text/xml" -d "${apiData}" "${jssURL}/computers/serialnumber/${serial}"
 exit 0
-
-
-
-#!/bin/bash
-## Variables
-#jssAPIUser=$4
-#jssAPIPassword=$5
-#jssURL=$6
-# https://jss.emea.akqa.net:8443/JSSResource
-#serial=`system_profiler SPHardwareDataType | awk '/Serial/ {print $4}'`
-#newComputerSite=$7
-## XML File
-#apiData="<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><computer><general><site><name>${newComputerSite}</name></site></general></computer>"
-## Commands
-#/usr/bin/curl -s -v -u  ${jssAPIUser}:${jssAPIPassword} -X PUT -H "Content-Type: text/xml" -d "${apiData}" "${jssURL}/computers/serialnumber/${serial}"
-#exit 0
